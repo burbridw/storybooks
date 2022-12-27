@@ -1,0 +1,110 @@
+* {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: lightgreen;
+}
+.book-select-window {
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    height: 8vh;
+    border-bottom: 1px solid black;
+}
+.book-select-button-container {
+    width: 100%;
+    height: 80vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.book-select {
+    height: 60vh;
+    width: 40vw;
+    box-shadow: 2px 2px 3px 0 black;
+}
+.page-select-window {
+    width: 100vw;
+    height: 100vh;
+}
+.page-select-button-container, .page-view-window {
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    margin-top:10px;
+}
+.page-select-grid {
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    
+}
+.page-select-box {
+    height: 97%;
+    width: 99%;
+    max-width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 black;
+}
+.page-view {
+    max-width: 870px;
+    margin: 0 auto;
+}
+.navi-button-container {
+    margin: 0 auto;
+    width: 90%;
+    height: 10vh;
+    display: flex;
+}
+.navi-button-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 20vw;
+    align-items: center;
+}
+.navi-button-left img {
+    transform: rotate(-90deg);
+    height: 80px;
+    width: 80px;
+}
+.navi-button-right {
+    width: 20vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navi-button-right img {
+    transform: rotate(90deg);
+    height: 80px;
+    width: 80px;
+}
+.navi-button-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-button {
+    width: 20vw;
+    height: 90%;
+    border: none;
+    box-shadow: 0 0 4px 1px black;
+    border-radius: 40px;
+    font-size: 1.5rem;  
+}
+.behind {
+    z-index: -20;
+    display: none;
+}
