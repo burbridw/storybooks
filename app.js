@@ -25,6 +25,7 @@ const morningObj = {
     31: "./images/morning/img31.png", 32: "./images/morning/img32.png", 
 }
 
+const preLoad = document.querySelector(".preload")
 const bookSelectWindow = document.querySelector(".book-select-window")
 const pageSelectWindow = document.querySelector(".page-select-window")
 const pageSelectHeader = document.querySelector(".page-select-header")
@@ -36,8 +37,16 @@ const pageSelectGrid = document.querySelector(".page-select-grid")
 const naviLeft = document.querySelector(".navi-button-left")
 const naviRight = document.querySelector(".navi-button-right")
 const naviBack = document.querySelector(".navi-button-back")
-let pageSelectBoxes
 
+function preload(){
+    let getAll = Object.values(autumnObj).concat( Object.values(morningObj) )
+    for ( let i = 0; i < getAll.length; i++ ) {
+        preLoad.innerHTML += `<img src="${getAll[i]}">`
+    }
+}
+preload()
+
+let pageSelectBoxes
 let bookPage
 let selectPage
 let autumn = false

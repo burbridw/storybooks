@@ -108,3 +108,6 @@ header {
     z-index: -20;
     display: none;
 }
+.preload {
+    display: none;
+}
