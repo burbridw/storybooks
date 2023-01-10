@@ -44,7 +44,7 @@ function preload(){
         preLoad.innerHTML += `<img src="${getAll[i]}">`
     }
 }
-preload()
+//preload()
 
 let pageSelectBoxes
 let bookPage
